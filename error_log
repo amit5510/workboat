@@ -1,0 +1,485 @@
+[15-May-2025 21:49:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'workboatroot'@'localhost' (using password: YES) in /home/upcharonline/public_html/workboat/db.php:7
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/db.php(7): mysqli->__construct('localhost', 'workboatroot', Object(SensitiveParameterValue), 'upcharon_db')
+#1 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#2 {main}
+  thrown in /home/upcharonline/public_html/workboat/db.php on line 7
+[15-May-2025 21:50:00 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'workboatroot'@'localhost' (using password: YES) in /home/upcharonline/public_html/workboat/db.php:7
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/db.php(7): mysqli->__construct('localhost', 'workboatroot', Object(SensitiveParameterValue), 'upcharon_db')
+#1 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#2 {main}
+  thrown in /home/upcharonline/public_html/workboat/db.php on line 7
+[15-May-2025 21:50:01 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'workboatroot'@'localhost' (using password: YES) in /home/upcharonline/public_html/workboat/db.php:7
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/db.php(7): mysqli->__construct('localhost', 'workboatroot', Object(SensitiveParameterValue), 'upcharon_db')
+#1 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#2 {main}
+  thrown in /home/upcharonline/public_html/workboat/db.php on line 7
+[15-May-2025 21:50:05 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'workboatroot'@'localhost' (using password: YES) in /home/upcharonline/public_html/workboat/db.php:7
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/db.php(7): mysqli->__construct('localhost', 'workboatroot', Object(SensitiveParameterValue), 'upcharon_db')
+#1 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#2 {main}
+  thrown in /home/upcharonline/public_html/workboat/db.php on line 7
+[22-May-2025 10:21:22 UTC] PHP Warning:  Undefined variable $pdo in /home/upcharonline/public_html/workboat/index.php on line 7
+[22-May-2025 10:21:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/upcharonline/public_html/workboat/index.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upcharonline/public_html/workboat/index.php on line 7
+[22-May-2025 10:21:37 UTC] PHP Warning:  Undefined variable $pdo in /home/upcharonline/public_html/workboat/index.php on line 7
+[22-May-2025 10:21:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function prepare() on null in /home/upcharonline/public_html/workboat/index.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/upcharonline/public_html/workboat/index.php on line 7
+[22-May-2025 10:22:27 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/upcharonline/public_html/workboat/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config.php(2): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/index.php(2): require('/home/upcharonl...')
+#2 {main}
+  thrown in /home/upcharonline/public_html/workboat/config.php on line 2
+[22-May-2025 10:23:21 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/upcharonline/public_html/workboat/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config.php(2): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/index.php(2): require('/home/upcharonl...')
+#2 {main}
+  thrown in /home/upcharonline/public_html/workboat/config.php on line 2
+[22-May-2025 10:23:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/upcharonline/public_html/workboat/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config.php(2): PDO->__construct('mysql:host=loca...', 'root', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/index.php(2): require('/home/upcharonl...')
+#2 {main}
+  thrown in /home/upcharonline/public_html/workboat/config.php on line 2
+[22-May-2025 10:24:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/index.php(2): require('/home/upcharonl...')
+#2 {main}
+  thrown in /home/upcharonline/public_html/workboat/config.php on line 2
+[22-May-2025 10:24:47 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/index.php(2): require('/home/upcharonl...')
+#2 {main}
+  thrown in /home/upcharonline/public_html/workboat/config.php on line 2
+[22-May-2025 10:31:51 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/index.php(2): require('/home/upcharonl...')
+#2 {main}
+  thrown in /home/upcharonline/public_html/workboat/config.php on line 2
+[22-May-2025 10:36:27 UTC] PHP Warning:  require(config.php): Failed to open stream: No such file or directory in /home/upcharonline/public_html/workboat/index.php on line 2
+[22-May-2025 10:36:27 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/upcharonline/public_html/workboat/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/upcharonline/public_html/workboat/index.php on line 2
+[22-May-2025 10:41:30 UTC] PHP Warning:  require(config.php): Failed to open stream: No such file or directory in /home/upcharonline/public_html/workboat/index.php on line 2
+[22-May-2025 10:41:30 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/upcharonline/public_html/workboat/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/upcharonline/public_html/workboat/index.php on line 2
+[22-May-2025 10:47:40 UTC] PHP Warning:  require(config.php): Failed to open stream: No such file or directory in /home/upcharonline/public_html/workboat/index.php on line 2
+[22-May-2025 10:47:40 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/upcharonline/public_html/workboat/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/upcharonline/public_html/workboat/index.php on line 2
+[22-May-2025 10:48:22 UTC] PHP Warning:  require(config.php): Failed to open stream: No such file or directory in /home/upcharonline/public_html/workboat/index.php on line 2
+[22-May-2025 10:48:22 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/upcharonline/public_html/workboat/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/upcharonline/public_html/workboat/index.php on line 2
+[22-May-2025 10:48:25 UTC] PHP Warning:  require(config.php): Failed to open stream: No such file or directory in /home/upcharonline/public_html/workboat/index.php on line 2
+[22-May-2025 10:48:25 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/upcharonline/public_html/workboat/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/upcharonline/public_html/workboat/index.php on line 2
+[22-May-2025 10:48:29 UTC] PHP Warning:  require(config.php): Failed to open stream: No such file or directory in /home/upcharonline/public_html/workboat/index.php on line 2
+[22-May-2025 10:48:29 UTC] PHP Fatal error:  Uncaught Error: Failed opening required 'config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/upcharonline/public_html/workboat/index.php:2
+Stack trace:
+#0 {main}
+  thrown in /home/upcharonline/public_html/workboat/index.php on line 2
+[22-May-2025 16:28:41 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:30:04 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:30:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:31:58 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:32:22 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:32:46 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:35:45 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:35:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:35:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:35:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:35:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:35:49 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:35:59 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:23 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:26 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:32 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:34 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:36:38 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:42:17 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:45:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:45:02 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:47:07 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:47:10 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:47:35 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:47:37 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:47:39 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:47:48 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:47:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:47:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:47:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:47:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:47:55 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:48:54 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:49:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:49:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:49:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:49:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:49:29 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:50:31 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
+[22-May-2025 16:57:05 UTC] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'upcharonline'@'localhost' to database 'workboat_db' in /home/upcharonline/public_html/workboat/config/config.php:2
+Stack trace:
+#0 /home/upcharonline/public_html/workboat/config/config.php(2): PDO->__construct('mysql:host=loca...', 'upcharonline', Object(SensitiveParameterValue))
+#1 /home/upcharonline/public_html/workboat/includes/db.php(4): require_once('/home/upcharonl...')
+#2 /home/upcharonline/public_html/workboat/index.php(2): include('/home/upcharonl...')
+#3 {main}
+  thrown in /home/upcharonline/public_html/workboat/config/config.php on line 2
