@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Workboat Media Pvt. Ltd.</title>
+<style>
+  /* Reset & basics */
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0; padding: 0;
+    background: #f9f9f9;
+    color: #333;
+  }
+  a {
+    color: #2980b9;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Header */
+  header {
+    background: #2c3e50;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0 0 10px;
+    font-weight: 700;
+  }
+  header p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 300;
+  }
+
+  /* Navigation */
+  nav {
+    background: #34495e;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  nav a {
+    display: block;
+    padding: 15px 20px;
+    font-weight: 600;
+    color: white;
+  }
+  nav a.active, nav a:hover {
+    background: #2980b9;
+  }
+
+  /* Sections */
+  section {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 0 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  section h2 {
+    border-bottom: 3px solid #2980b9;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  section p {
+    line-height: 1.6;
+  }
+
+  /* Projects list */
+  ul.projects-list {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+
+  /* Gallery Grid */
+  #galleryGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  #galleryGrid div {
+    width: calc(33.333% - 10px);
+    border-radius: 6px;
+    overflow: hidden;
+    background: #f0f0f0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  #galleryGrid img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  #galleryGrid p {
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0;
+  }
+
+  /* Team table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+  }
+  th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+  }
+  th {
+    background: #2980b9;
+    color: white;
+    text-align: left;
+  }
+
+  /* Contact form */
+  form {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  form label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+  form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  form button {
+    padding: 12px 25px;
+    background: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  form button:hover {
+    background: #1f618d;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    padding: 20px 10px;
+    margin-top: 40px;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    #galleryGrid div {
+      width: calc(50% - 10px);
+    }
+  }
+  @media (max-width: 480px) {
+    #galleryGrid div {
+      width: 100%;
+    }
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+    nav a {
+      padding: 10px;
+    }
+  }
+
+  /* Login/Logout */
+  #logoutBtn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: #e74c3c;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+  }
+  #loginSection {
+    max-width: 320px;
+    margin: 40px auto;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  }
+  #loginSection h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #2980b9;
+  }
+  #loginSection input, #loginSection select, #loginSection button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  #loginSection button {
+    background: #2980b9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  #loginSection button:hover {
+    background: #1f618d;
+  }
+  #loginError {
+    color: #e74c3c;
+    font-weight: 600;
+    margin-bottom: 15px;
+    display: none;
+  }
+
+  /* Admin Upload */
+  #adminUpload {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+  }
+  #adminUpload h3 {
+    margin-top: 0;
+    font-weight: 700;
+    color: #2980b9;
+  }
+  #adminUpload input, #adminUpload button {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  #adminUpload button {
+    background: #2980b9;
+    border: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  #adminUpload button:hover {
+    background: #1f618d;
+  }
+  #uploadMsg {
+    color: green;
+    font-weight: 600;
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Workboat Media Pvt. Ltd.</h1>
+  <p>Innovative Digital Solutions for Modern Business</p>
+</header>
+
+<nav id="navLinks">
+  <a href="#" class="active" onclick="navigate(event, 'home')">Home</a>
+  <a href="#" onclick="navigate(event, 'about')">About Us</a>
+  <a href="#" onclick="navigate(event, 'projects')">Projects</a>
+  <a href="#" onclick="navigate(event, 'gallery')">Gallery</a>
+  <a href="#" onclick="navigate(event, 'services')">Services</a>
+  <a href="#" onclick="navigate(event, 'team')">Our Team</a>
+  <a href="#" onclick="navigate(event, 'contact')">Contact Us</a>
+</nav>
+
+<!--<button id="logoutBtn" onclick="logout()">Logout</button>-->
+
+<!--<div id="login-widget" style="position: fixed; top: 10px; right: 10px; z-index: 1000;">-->
+<!--  <button id="login-btn" onclick="toggleLoginForm()">Login</button>-->
+<!--  <button id="logout-btn" onclick="logout()" style="display:none;">Logout</button>-->
+
+<!--  <div id="login-form" style="display:none; margin-top: 10px; background: white; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">-->
+<!--    <label>-->
+<!--      Username:<br>-->
+<!--      <input type="text" id="username" />-->
+<!--    </label><br><br>-->
+<!--    <label>-->
+<!--      Password:<br>-->
+<!--      <input type="password" id="password" />-->
+<!--    </label><br><br>-->
+<!--    <button onclick="login()">Submit</button>-->
+<!--  </div>-->
+<!--</div>-->
+
+<!-- Sections -->
+
+<section id="home" class="contentSection">
+  <h2>Welcome to Workboat Media Pvt. Ltd.</h2>
+  <p>We are a leading media company specializing in digital marketing, web development, and creative solutions tailored to your business needs.</p>
+</section>
+
+<section id="about" class="contentSection" style="display:none;">
+  <h2>About Us</h2>
+  <p>Founded in 2014, Workboat Media Pvt. Ltd. has been delivering exceptional digital services across various industries. Our mission is to empower businesses with innovative technologies and creative strategies.</p>
+</section>
+
+<section id="projects" class="contentSection" style="display:none;">
+  <h2>Projects</h2>
+  <ul class="projects-list">
+    <li>Upchar: A healthcare platform for booking appointments and finding specialists in your city.</li>
+    <li>Gyantech Learning Platform: An e-learning solution offering courses on modern technologies like MERN Stack.</li>
+    <li>Corporate Websites: Custom-built websites to enhance online presence for various clients.</li>
+  </ul>
+</section>
+
+<section id="gallery" class="contentSection" style="display:none;">
+  <h2>Gallery</h2>
+  <div id="galleryGrid">
+    <div>
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Creative Work" />
+      <p>Creative workspace</p>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80" alt="Team Collaboration" />
+      <p>Team collaboration</p>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=400&q=80" alt="Coding session" />
+      <p>Coding session</p>
+    </div>
+  </div>
+
+  <!-- Admin upload form, only visible to admin -->
+  <div id="adminUpload" style="display:none;">
+    <h3>Upload Image (Admin Only)</h3>
+    <form id="uploadForm" onsubmit="return uploadImage(event)">
+      <input id="imageURL" type="url" placeholder="Image URL" required />
+      <input id="imageCaption" type="text" placeholder="Caption (optional)" />
+      <button type="submit">Upload</button>
+    </form>
+    <p id="uploadMsg">Image uploaded successfully!</p>
+  </div>
+</section>
+
+<section id="services" class="contentSection" style="display:none;">
+  <h2>Our Services</h2>
+  <p>We offer a wide range of digital services including:</p>
+  <ul>
+    <li>Digital Marketing Strategy & SEO</li>
+    <li>Web & Mobile Application Development</li>
+    <li>Graphic Design & Branding</li>
+    <li>Content Creation & Social Media Management</li>
+  </ul>
+</section>
+
+<section id="team" class="contentSection" style="display:none; padding: 40px 20px; background-color: #f9f9f9;">
+  <h2 style="text-align:center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #222; margin-bottom: 30px;">
+    Meet Our Team & Management
+  </h2>
+
+  <div style="max-width: 900px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+
+    <!-- Directors -->
+    <div style="background: #e6f0ff; box-shadow: 0 4px 10px rgb(0 0 0 / 0.1); border-radius: 10px; padding: 20px; width: 260px; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+      <img src="assets/uploads/atrikesh_kumar.jpg" alt="Atrikesh Kumar" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+      <h3 style="margin: 10px 0 5px; color: #004aad;">Atrikesh Kumar</h3>
+      <p style="font-weight: 700; color: #004aad; margin: 0 0 8px;">Director</p>
+      <a href="mailto:atrikesh.kumar@workboatmedia.com" style="color: #004aad; text-decoration: none; font-size: 0.9rem;">atrikesh@workboatmedia.online</a>
+    </div>
+
+    <div style="background: #e6f0ff; box-shadow: 0 4px 10px rgb(0 0 0 / 0.1); border-radius: 10px; padding: 20px; width: 260px; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+      <img src="assets/uploads/sanjeev_kumar.jpg" alt="Mr Sanjeev Kumar" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+      <h3 style="margin: 10px 0 5px; color: #004aad;">Mr Sanjeev Kumar</h3>
+      <p style="font-weight: 700; color: #004aad; margin: 0 0 8px;">Director</p>
+      <a href="mailto:sanjeev.kumar@workboatmedia.com" style="color: #004aad; text-decoration: none; font-size: 0.9rem;">sanjeev.kumar@workboatmedia.online</a>
+    </div>
+
+    <!-- Team Members -->
+    <div style="background: #fff; box-shadow: 0 4px 10px rgb(0 0 0 / 0.1); border-radius: 10px; padding: 20px; width: 260px; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+      <img src="assets/uploads/amit_kumar.jpg" alt="Amit Kumar" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+      <h3 style="margin: 10px 0 5px; color: #0073e6;">Amit Kumar</h3>
+      <p style="font-weight: 600; color: #555; margin: 0 0 8px;">Chief Technical Officer (CTO)</p>
+      <a href="mailto:amit.kumar@workboatmedia.com" style="color: #0073e6; text-decoration: none; font-size: 0.9rem;">amit@workboatmedia.online</a>
+    </div>
+
+    <div style="background: #fff; box-shadow: 0 4px 10px rgb(0 0 0 / 0.1); border-radius: 10px; padding: 20px; width: 260px; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+      <img src="assets/uploads/dr_anish_kumar.jpg" alt="Dr Anish Kumar" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+      <h3 style="margin: 10px 0 5px; color: #0073e6;">Dr. Anish Kumar</h3>
+      <p style="font-weight: 600; color: #555; margin: 0 0 8px;">Managing Director</p>
+      <a href="mailto:anish.kumar@workboatmedia.com" style="color: #0073e6; text-decoration: none; font-size: 0.9rem;">dr.anish@workboatmedia.online</a>
+    </div>
+
+    <div style="background: #fff; box-shadow: 0 4px 10px rgb(0 0 0 / 0.1); border-radius: 10px; padding: 20px; width: 260px; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+      <img src="assets/uploads/shweta_sharma.jpg" alt="Shweta Sharma" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin-bottom: 15px;">
+      <h3 style="margin: 10px 0 5px; color: #0073e6;">Shweta Sharma</h3>
+      <p style="font-weight: 600; color: #555; margin: 0 0 8px;">HR</p>
+      <a href="mailto:shweta.sharma@workboatmedia.com" style="color: #0073e6; text-decoration: none; font-size: 0.9rem;">shweta.sharma@workboatmedia.online</a>
+    </div>
+
+  </div>
+</section>
+
+
+<section id="contact" class="contentSection" style="display:none;">
+  <h2>Contact Us</h2>
+  <form id="contactForm" onsubmit="return submitContactForm(event)">
+    <label for="contactName">Name:</label>
+    <input id="contactName" type="text" required />
+    <label for="contactEmail">Email:</label>
+    <input id="contactEmail" type="email" required />
+    <label for="contactMessage">Message:</label>
+    <textarea id="contactMessage" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p id="contactSuccess" style="color:green; font-weight:bold; display:none; margin-top:15px;">Thank you for contacting us. We'll get back to you soon!</p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Workboat Media Pvt. Ltd. All rights reserved.</p>
+</footer>
+
+<script>
+  // Navigation SPA functionality
+  function navigate(event, sectionId) {
+    event.preventDefault();
+
+    // Show selected section, hide others
+    document.querySelectorAll('.contentSection').forEach(section => {
+      section.style.display = section.id === sectionId ? 'block' : 'none';
+    });
+
+    // Update active nav link
+    const links = document.querySelectorAll('nav a');
+    links.forEach(link => link.classList.remove('active'));
+    event.target.classList.add('active');
+  }
+
+  // Users data (username: password + role)
+  const users = {
+    admin: { password: 'admin123', role: 'admin' },
+    team: { password: 'team123', role: 'team' }
+  };
+
+  let currentUser = null;
+
+  // Toggle login form
+  function toggleLoginForm() {
+    const form = document.getElementById('login-form');
+    form.style.display = form.style.display === 'none' ? 'block' : 'none';
+  }
+
+  // Login function
+  function login() {
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value;
+
+    if (users[username] && users[username].password === password) {
+      currentUser = { username, role: users[username].role };
+      alert(`Welcome, ${username}! You are logged in as ${currentUser.role}.`);
+
+      // Hide login button and form
+      document.getElementById('login-btn').style.display = 'none';
+      document.getElementById('login-form').style.display = 'none';
+
+      // Show logout buttons
+      document.getElementById('logout-btn').style.display = 'inline-block';
+      document.getElementById('logoutBtn').style.display = 'inline-block';
+
+      // Show admin upload if admin
+      if (currentUser.role === 'admin') {
+        document.getElementById('adminUpload').style.display = 'block';
+      } else {
+        document.getElementById('adminUpload').style.display = 'none';
+      }
+
+      // Enable navigation except Home always enabled
+      setNavigationEnabled(true);
+    } else {
+      alert('Invalid username or password!');
+    }
+  }
+
+  // Logout function
+  function logout() {
+    if(currentUser) alert(`User ${currentUser.username} logged out.`);
+    currentUser = null;
+
+    // Show login button, hide logout buttons
+    document.getElementById('login-btn').style.display = 'inline-block';
+    document.getElementById('logout-btn').style.display = 'none';
+    document.getElementById('logoutBtn').style.display = 'none';
+
+    // Hide admin upload form
+    document.getElementById('adminUpload').style.display = 'none';
+
+    // Show home section only
+    document.querySelectorAll('.contentSection').forEach(section => section.style.display = 'none');
+    document.getElementById('home').style.display = 'block';
+
+    // Reset nav links
+    document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
+    document.querySelector('nav a[href="#"]').classList.add('active');
+    document.querySelector('nav a').classList.add('active');
+
+    // Disable navigation except Home
+    // setNavigationEnabled(false);
+  }
+
+//   // Enable/disable navigation links except Home
+//   function setNavigationEnabled(enabled) {
+//     const links = document.querySelectorAll('nav a');
+//     links.forEach(link => {
+//       if (link.textContent.trim() === 'Home') {
+//         link.style.pointerEvents = 'auto';
+//         link.style.opacity = '1';
+//       } else {
+//         link.style.pointerEvents = enabled ? 'auto' : 'none';
+//         link.style.opacity = enabled ? '1' : '0.5';
+//       }
+//     });
+//   }
+
+//   // On page load disable navigation except Home
+//   setNavigationEnabled(false);
+
+//   // Admin image upload
+//   function uploadImage(event) {
+//     event.preventDefault();
+//     const url = document.getElementById('imageURL').value.trim();
+//     const caption = document.getElementById('imageCaption').value.trim();
+
+//     if (!url) {
+//       alert('Please enter a valid image URL.');
+//       return false;
+//     }
+
+//     const gallery = document.getElementById('galleryGrid');
+//     const div = document.createElement('div');
+//     const img = document.createElement('img');
+//     img.src = url;
+//     img.alt = caption || 'Uploaded Image';
+//     const p = document.createElement('p');
+//     p.textContent = caption;
+
+//     div.appendChild(img);
+//     div.appendChild(p);
+//     gallery.appendChild(div);
+
+//     document.getElementById('uploadMsg').style.display = 'block';
+//     setTimeout(() => {
+//       document.getElementById('uploadMsg').style.display = 'none';
+//     }, 3000);
+
+//     // Reset form
+//     document.getElementById('uploadForm').reset();
+//     return false;
+//   }
+
+//   // Contact form submit
+//   function submitContactForm(event) {
+//     event.preventDefault();
+
+//     const name = document.getElementById('contactName').value.trim();
+//     const email = document.getElementById('contactEmail').value.trim();
+//     const message = document.getElementById('contactMessage').value.trim();
+
+//     if (!name || !email || !message) {
+//       alert('Please fill in all fields.');
+//       return false;
+//     }
+
+//     // In real app, here you'd send the data to server via fetch or AJAX
+
+//     // Reset form and show success message
+//     event.target.reset();
+//     document.getElementById('contactSuccess').style.display = 'block';
+
+//     setTimeout(() => {
+//       document.getElementById('contactSuccess').style.display = 'none';
+//     }, 5000);
+
+//     return false;
+//   }
+</script>
+
+</body>
+</html>
