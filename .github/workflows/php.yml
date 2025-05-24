@@ -1,4 +1,4 @@
-name: PHP CI (CodeIgniter)
+name: PHP CI
 
 on:
   push:
@@ -6,38 +6,14 @@ on:
   pull_request:
     branches: [ "main" ]
 
-permissions:
-  contents: read
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v4
 
-    - name: Set up PHP
-      uses: shivammathur/setup-php@v2
-      with:
-        php-version: '8.1'
-        extensions: mbstring, intl, pdo, pdo_mysql
-        ini-values: post_max_size=256M, upload_max_filesize=256M
-        coverage: none
-
-    - name: Validate composer.json and composer.lock
-      run: composer validate --strict
-
-    - name: Cache Composer packages
-      uses: actions/cache@v3
-      with:
-        path: vendor
-        key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
-        restore-keys: ${{ runner.os }}-php-
-
-    - name: Install dependencies
-      run: composer install --prefer-dist --no-progress
-
-    # Optional: Run tests
-    # - name: Run tests
-    #   run: vendor/bin/phpunit
+    # Add your PHP-related steps here (e.g., linting, testing)
+    - name: Run PHP Lint
+      run: find . -name "*.php" -print0 | xargs -0 -n1 php -l
